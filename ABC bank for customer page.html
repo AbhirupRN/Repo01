@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles2.css">
+  <title>ABC bank for customers</title>
+</head>
+<body>
+
+<script src="second.js"></script>
+
+<marquee> <h4> ABC retail Banking Application </h4></marquee>
+<img src = https://ccbank.us/wp-content/uploads/logo-ABC-bank.png alt=”Banklogo”>
+<br>
+<center><h1>ABC BANK SERVICES for Customers </h1> </center>
+<h3>Click on the each menu to know more:</h3>
+
+<div class="tab">
+  <button class="tablinks" onclick="openAcc(event, 'Savings')">Savings Account</button>
+  <button class="tablinks" onclick="openAcc(event, 'Current')">Current Account</button>
+  <button class="tablinks" onclick="openAcc(event, 'Checking')">Checking Account</button>
+  <button class="tablinks" onclick="openAcc(event, 'Deposit')">Fixed Deposit</button>
+</div>
+
+<div class="footer">
+  <p>© Copyright 2021, All Rights Reserved</p>
+</div>
+
+<div id="Savings" class="tabcontent">
+  <h3>Savings Bank Account</h3>
+  <p>A Savings bank account is the most common operating account for individuals and others for non-commercial transactions. A Savings account helps people to put through day-to-day banking transactions besides earning some return on the savings made. Banks generally put some ceilings on the total number of withdrawals permitted during specific time periods. Banks also stipulate certain minimum balance to be maintained in savings accounts. </p>
+</div>
+
+<div id="Current" class="tabcontent">
+  <h3>Current Bank Account</h3>
+  <p>User can do transaction as many as they can. Annual service charge is $ 150 which will be deducted from customer account through ECS process at the end of each fiscal year. Minimum balance of this kind of account defined by bank is $ 2000. At any circumstances if account balance goes down below said amount then bank deduct $ 2 from account in favour of penalty. </p> 
+</div>
+
+<div id="Checking" class="tabcontent">
+  <h3>Checking Account</h3>
+  <p>Any individual can do transaction as many as they can. This kind of account used for pay bills, purchasing, transfer money to another accounts
+and many other usages. Institute may impose fees on checking account of amount $ 50 yearly. Any combination of below three rules can be used by the banks. Those are :
+
+<li>Flat fee regardless of the balance maintained or number of transactions. </li>
+<li>Additional fee if average balance goes down below a specified amount.</li>
+<li>A fee for every transaction conducted.</li>
+</p>
+</div>
+
+<div id="Deposit" class="tabcontent">
+  <h3>Fixed or Time Deposit</h3>
+  <p>Time deposits are deposits accepted by banks for a specified period of time. As per rule defined by federal bank of US directives the minimum period for which term deposit can be accepted is 15 days. The retail banks generally do not accept deposit for less than 15 days or more than 10 years. Banks pay interest on term deposits based on the period of deposits and normally pay higher interest for longer term deposits. Banks have full discretion to fix their interest rates on deposits and these rates are varied from time to time depending on market conditions. Changes made in interest rates from time to time do not alter the interest paid on the existing deposits. Depositor can collect interest on every quarter/ every month/ half yearly / annually. Retail bank can quote a higher rate of interest for each individual deposits more than $ 150 000. To incorporate the above functionality, developers has to write some batch process/ job which will run on every 15 days of the calendar month and credit the interest amount to each individuals account.</p>
+</div>
+   
+</body>
+</html> 

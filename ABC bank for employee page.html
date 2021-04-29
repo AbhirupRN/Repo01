@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset ="utf-8" >
+<meta name ="author" content ="Abhirup"/>
+<title>ABC bank for bankers</title>
+<link rel="stylesheet" href="styles1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<script src="first.js"></script>
+<marquee><h4>ABC retail Banking Application</h4></marquee>
+<img src = https://ccbank.us/wp-content/uploads/logo-ABC-bank.png alt=”Banklogo” style= "float: left";>
+<img src = https://ccbank.us/wp-content/uploads/logo-ABC-bank.png alt=”Banklogo” style= "float: right";>
+<br>
+<center><h1>ABC BANK SERVICES for Administrator </h1></center>
+<div class="tab">
+  <button class="tablinks" onclick="openAcc(event, 'Create')">Create Account</button>
+  <button class="tablinks" onclick="openAcc(event, 'Update')">Update Account</button>
+  <button class="tablinks" onclick="openAcc(event, 'Transaction')">Transaction Details</button>
+  <button class="tablinks" onclick="openAcc(event, 'Summary')">View Summary</button>
+  <button class="tablinks" onclick="openAcc(event, 'Report')">Report</button>
+  <button class="tablinks" onclick="openAcc(event, 'Search')">Search</button>
+</div>
+
+<div class="footer">
+  <p>© Copyright 2021, All Rights Reserved</p>
+</div>
+
+<div id="Create" class="tabcontent">
+<h3>Creating a NEW Bank Account</h3>
+
+<form onsubmit="myFunction()">
+
+<table width= "500" height= "100" border = "0">
+<tr>
+<td>Customer Name*: </td>
+<td>  <input type="text" maxlength="50" placeholder="Enter the full Name" required> </td>
+</tr>
+
+<tr>
+<td>PAN* </td>
+<td>  <input type="text" minlength= "9" maxlength= "10" placeholder="PAN number" style="text-transform: uppercase" required> </td>
+</tr>
+
+<tr>
+<td> Email Address: </td>
+<td> <input type = "email" placeholder="Enter the email address"> </td>	
+</tr>						
+
+<tr>
+<td> Mobile Number </td>
+<td> <input type = "text" maxlength="14" value="+91 "> </td>
+</tr>
+
+<td> Gender</td>
+<td>
+<label> <input type = "radio" name="Gender"> Male  </label>
+<label> <input type = "radio" name="Gender"> Female </label>
+<label> <input type = "radio" name="Gender"> Others </label>
+</td>
+
+<tr>
+<td> Date of birth*: </td>
+<td> <input type ="date" min ="1900-01-01" required> </td>
+</tr>
+
+<tr>
+<td> Initial Balance* </td>
+<td> <input type ="number" min="5000" required> </td>
+</tr>
+
+<tr>
+<td> Choose the home branch*</td>
+<td> 
+<select name= "branch" required>
+
+<option value="Kolkata"> Kolkata </option>
+<option value="Delhi">Delhi</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Chennai">Chennai</option>
+<option value="Bengaluru">Bengaluru</option>
+</select>
+</td>
+</tr>
+</table>
+ <p>
+ <label>
+ <input type="checkbox" value="terms" required>
+ I agree to all the <a href="/terms">terms and conditions</a>
+ </label>
+ </p>
+<br>
+<input type = "Submit" id="submit" value= "Create Account">
+
+</form>
+</div>
+
+<div id="Update" class="tabcontent">
+  <h3>Update account details </h3>
+  <p>Account functionality enable bankers to update the customer bank account balance based on the transaction made by customer using credit card / debit card/cheque. Application should provide some interface that will help customer to update his/her personal information as well.</p>
+  <p>To incorporate fund transfer functionality, application should provide some interface that will help user to transfer electronic money from one account to another account. Fund transfer can be done to the other account of same bank.</p>
+  <p><b>Note – Fund transfer</b>, refers to the computer-based systems used to perform financial transactions electronically. The term is used for a number of different concepts:</p>
+  <p>Account holder initiated transactions, where an account holder makes use of electronic interface provided by bank. Transactions involving stored value of electronic money, possibly in a private currency Wire transfer via an international banking network.</p> 
+</div>
+
+<div id="Transaction" class="tabcontent">
+  <h3>Transaction details of the account </h3>
+  <ol>
+   <li>Account Number: XXXX XXXX XXXX</li>
+   <li>Account type </li>
+   <li>Account Balance: Rs. XXXXX </li>
+   <li>Last transaction date time</li>
+ </ol>
+</div>
+
+<div id="Summary" class="tabcontent">
+  <h3>Account Summary </h3>
+  
+</div>
+
+<div id="Report" class="tabcontent">
+  <h3>Account Report </h3>
+ <table border = 4px solid black>  
+  <th>Serial No.</th> 
+  <th>Transaction date</th> 
+  <th>Transaction remarks</th>
+  <th>Transaction type (debit/ credit)</th>
+  <th>Balance on date</th>
+  <th>Transaction amount</th>
+  <th>From account number</th>
+  <th>To account number</th> 
+  <th>Transaction time stamp</th>
+  <th>Transaction id</th>
+  <th>Transaction status</th>
+<tr> <td>  01  </td></tr>
+<tr> <td>  02  </td></tr>
+<tr> <td>  03  </td></tr>
+<tr> <td>  04  </td></tr>
+<tr> <td>  05  </td></tr>
+</table>
+</div>
+
+<div id="Search" class="tabcontent">
+  <h3>Search by account name, account number </h3>
+  <input type="text" id = "searchbox" placeholder="Search..." name="search">
+  <button type="submit" id="button"><i class="fa fa-search"></i></button>
+</div>
+   
+</body>
+</html> 

@@ -1,0 +1,87 @@
+body {
+font-family: Arial;
+background-color: pink;
+}
+
+/* Style for the tab */
+.tab {
+  overflow: hidden;
+  border: 2px solid red;
+  background-color: yellow;
+}
+
+/* Style for the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  cursor: pointer;
+  padding: 15px 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Change background colour of buttons on hover */
+.tab button:hover {
+  background-color: orange;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 20px;
+  background-color: lightgreen;
+  border: 5px solid blue;
+  border-top: none;
+}
+
+/* Style the logo image */
+img {
+width: 10%;
+height: 10%;
+}
+
+/* Style the submit button */
+#submit {
+width: 10em; 
+height: 3em;
+background-color: Blue;
+color: white;
+font-weight: bold;
+}
+
+/* Style the search field */
+#searchbox{
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  width: 20%;
+  background: white;
+}
+
+/* Style the search button */
+#button {
+  width: 10%;
+  padding: 10px;
+  background: blue;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+/* Style the footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
